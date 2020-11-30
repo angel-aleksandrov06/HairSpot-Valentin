@@ -36,4 +36,8 @@
     <ProjectReference Include="..\HairSpotValentin.Web.Infrastructure\HairSpotValentin.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\HairSpotValentin.Web.ViewModels\HairSpotValentin.Web.ViewModels.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
 </Project>

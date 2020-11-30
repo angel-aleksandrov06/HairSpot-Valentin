@@ -26,6 +26,12 @@
 
         public DbSet<Setting> Settings { get; set; }
 
+        public DbSet<Appointment> Appointments { get; set; }
+
+        public DbSet<AppointmentStatus> AppointmentStatuses { get; set; }
+
+        public DbSet<Procedure> Procedures { get; set; }
+
         public override int SaveChanges() => this.SaveChanges(true);
 
         public override int SaveChanges(bool acceptAllChangesOnSuccess)

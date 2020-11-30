@@ -9,6 +9,7 @@
     using HairSpotValentin.Data.Repositories;
     using HairSpotValentin.Data.Seeding;
     using HairSpotValentin.Services.Data;
+    using HairSpotValentin.Services.Data.Gallery;
     using HairSpotValentin.Services.Mapping;
     using HairSpotValentin.Services.Messaging;
     using HairSpotValentin.Web.ViewModels;
@@ -64,6 +65,7 @@
             // Application services
             services.AddTransient<IEmailSender, NullMessageSender>();
             services.AddTransient<ISettingsService, SettingsService>();
+            services.AddTransient<IGalleriesService, GalleriesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
